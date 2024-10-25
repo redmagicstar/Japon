@@ -1,0 +1,174 @@
+.cart-item-container {
+  margin-top: 1.25rem;
+  height: 8rem;
+  width: 97%;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: #202020;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.cart-item-container a {
+  all: unset;
+}
+.cart-item-container a.shoes-preview {
+  height: 80%;
+  width: 35%;
+  margin: 0 0.5rem;
+}
+.cart-item-container a.shoes-preview img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.cart-item-container div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.cart-item-container div div:nth-child(2) {
+  height: 1.5rem;
+  width: 11rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-item-container .cart-stars-contianer {
+  position: relative;
+  width: 45%;
+  height: 0.9rem;
+}
+.cart-item-container .cart-stars-contianer img.cart-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cart-item-container .cart-stars-contianer .cart-stars-upper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  -moz-column-gap: 0.09rem;
+       column-gap: 0.09rem;
+}
+.cart-item-container .cart-stars-contianer .cart-stars-upper img.cart-star {
+  height: 0.9rem;
+  height: 0.9rem;
+}
+.cart-item-container div div h6 {
+  max-width: 40%;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #494949;
+  overflow: hidden;
+}
+.cart-item-container div h5 {
+  all: unset;
+  font-size: 1.7rem;
+  max-width: 5.5rem;
+  overflow: hidden;
+}
+.cart-item-container div.remove--add {
+  all: unset;
+  position: absolute;
+  left: 56%;
+  top: 72.5%;
+  width: 5rem;
+  height: 1.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #494949;
+  box-shadow: 0 0 5px #090909;
+  border-radius: 0.5rem;
+  transition: all 1s;
+}
+.cart-item-container .remove--add button {
+  all: unset;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  height: 100%;
+}
+.cart-item-container .remove--add button:first-child :hover {
+  color: #eb0000;
+}
+.cart-item-container .remove--add button:nth-child(2) :hover {
+  color: #00ffd5;
+}
+.cart-item-container .remove--add button:nth-child(3) :hover {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 380px) {
+  .cart-item-container {
+    padding: 2.5vw 0;
+    width: 98%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .cart-item-container img.shoes-preview {
+    width: 25vw;
+    height: 25vw;
+  }
+  .cart-item-container div {
+    font-size: 3.5vw;
+  }
+  .cart-item-container div div:nth-child(2) {
+    height: 4vw;
+    width: 45.5vw;
+  }
+  .cart-item-container div div:nth-child(2) .cart-stars-contianer {
+    height: 4vw;
+  }
+  .cart-item-container div div:nth-child(2) .cart-stars-contianer .cart-stars-upper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    -moz-column-gap: 0vw;
+         column-gap: 0vw;
+  }
+  .cart-item-container div div:nth-child(2) .cart-stars-contianer .cart-stars-upper img.cart-star {
+    height: 4vw;
+    height: 4vw;
+  }
+  .cart-item-container div div h6 {
+    font-size: 3vw;
+    max-width: 14vw;
+  }
+  .cart-item-container div h5 {
+    font-size: 6vw;
+    max-width: 22vw;
+    overflow-x: auto;
+  }
+  .cart-item-container div h5::-webkit-scrollbar {
+    height: 3px;
+  }
+  .cart-item-container div.remove--add {
+    all: unset;
+    position: absolute;
+    left: 49%;
+    top: 69%;
+    width: 52.5%;
+    height: 32.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #494949;
+    box-shadow: 0 0 5px #090909;
+    border-radius: 0.5rem;
+    transition: all 1s;
+  }
+}/*# sourceMappingURL=cartItem.css.map */
